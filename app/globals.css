@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f1efe9;
+  --foreground: #111111;
+  --muted: #6e6b64;
+  --accent: #9c3f32;
+  --border: rgba(17,17,17,.16);
+  --surface: #e7e4dc;
+  --dark: #121212;
+  --dark-muted: #a7a39a;
+  --ease: cubic-bezier(.16,1,.3,1);
+}
+
+* { box-sizing: border-box; }
+html { background: var(--background); }
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, sans-serif;
+  overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+::selection { background: var(--foreground); color: var(--background); }
+
+.container { width: min(1400px, calc(100% - 48px)); margin-inline: auto; }
+.serif { font-family: var(--font-serif), Georgia, serif; }
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.rule { border-top: 1px solid var(--border); }
+
+.noise {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: .025;
+  z-index: 90;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 700px) {
+  .container { width: min(100% - 32px, 1400px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+.hero-frame { isolation: isolate; }
+.hero-copy { mix-blend-mode: normal; }
+.hero-image::after { content: ""; position: absolute; inset: 0; border: 1px solid rgba(255,255,255,.12); pointer-events: none; }
+
+@media (max-width: 700px) {
+  .hero-image { top: 21%; right: -3%; height: 34vh; width: 47vw; }
+  .hero-copy { padding-top: 23vh; }
+  .hero-copy h1 { font-size: 18vw; }
+  .hero-copy h1 span { margin-left: 10%; }
+}
