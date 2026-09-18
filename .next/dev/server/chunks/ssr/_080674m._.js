@@ -134,7 +134,7 @@ function Hero() {
                                 },
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                        src: "https://images.unsplash.com/photo-1523726491678-bf852e717f6a?auto=format&fit=crop&w=1400&q=88",
+                                        src: "/images/balazs-ketyi-9VzoRKfBsMM-unsplash.jpg",
                                         alt: "Abstract studio material placeholder",
                                         className: "h-full w-full object-cover object-[62%_center] grayscale-[20%]"
                                     }, void 0, false, {
@@ -748,7 +748,7 @@ function Reveal({ children, className = "", delay = 0 }) {
         },
         viewport: {
             once: true,
-            amount: 0.2
+            amount: 0.05
         },
         transition: {
             duration: 0.8,
@@ -786,7 +786,7 @@ function ImageReveal({ src, alt, className = "" }) {
             },
             viewport: {
                 once: true,
-                amount: 0.15
+                amount: 0.05
             },
             transition: {
                 duration: 1.15,
@@ -888,7 +888,7 @@ function SelectedWork() {
                             },
                             viewport: {
                                 once: true,
-                                amount: .12
+                                amount: .05
                             },
                             transition: {
                                 duration: .85,
@@ -1002,7 +1002,7 @@ function SelectedWork() {
                             },
                             viewport: {
                                 once: true,
-                                amount: .12
+                                amount: .05
                             },
                             transition: {
                                 duration: .9,
@@ -1117,7 +1117,7 @@ function SelectedWork() {
                             },
                             viewport: {
                                 once: true,
-                                amount: .12
+                                amount: .05
                             },
                             transition: {
                                 duration: .9,
@@ -1436,7 +1436,7 @@ const projects = [
         client: "[CLIENT NAME]",
         year: "2026",
         category: "Digital / Brand",
-        image: "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1800&q=85",
+        image: "/images/cherrydeck-rMILC1PIwM0-unsplash.jpg",
         description: "A visual identity translated into a tactile digital environment.",
         size: "wide"
     },
@@ -1446,7 +1446,7 @@ const projects = [
         client: "[CLIENT NAME]",
         year: "2026",
         category: "Interactive / Motion",
-        image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=85",
+        image: "/images/pexels-mikael-blomkvist-6476578.jpg",
         description: "A moving interface built around rhythm, material and interaction.",
         size: "portrait"
     },
@@ -1456,7 +1456,7 @@ const projects = [
         client: "[CLIENT NAME]",
         year: "2025",
         category: "Creative Development",
-        image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1600&q=85",
+        image: "/images/pexels-silverkblack-23496709.jpg",
         description: "An editorial commerce experience with a deliberately quiet interface.",
         size: "square"
     }

@@ -12,7 +12,7 @@ export default function StudioCulture() {
         </div>
         <div className="mt-20 grid grid-cols-12 items-end gap-6">
           <ImageReveal
-            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=85"
+            src="/images/pexels-kindelmedia-7688336.jpg"
             alt="Studio placeholder"
             className="col-span-12 aspect-[4/3] md:col-span-8 md:aspect-[16/10]"
           />

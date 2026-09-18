@@ -18,7 +18,7 @@ export default function SelectedWork() {
           <motion.article
             initial={reduced ? false : { opacity: 0, y: 35 }}
             whileInView={reduced ? undefined : { opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: .12 }}
+            viewport={{ once: true, amount: .05 }}
             transition={{ duration: .85, ease: [0.16,1,.3,1] }}
           >
             <div className="grid grid-cols-12 gap-4 items-end">
@@ -40,7 +40,7 @@ export default function SelectedWork() {
           <motion.article
             initial={reduced ? false : { opacity: 0, y: 45 }}
             whileInView={reduced ? undefined : { opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: .12 }}
+            viewport={{ once: true, amount: .05 }}
             transition={{ duration: .9, ease: [0.16,1,.3,1] }}
             className="mt-28 md:mt-44"
           >
@@ -63,7 +63,7 @@ export default function SelectedWork() {
           <motion.article
             initial={reduced ? false : { opacity: 0, y: 45 }}
             whileInView={reduced ? undefined : { opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: .12 }}
+            viewport={{ once: true, amount: .05 }}
             transition={{ duration: .9, ease: [0.16,1,.3,1] }}
             className="mt-28 md:mt-40"
           >

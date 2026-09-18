@@ -16,7 +16,7 @@ export const projects: Project[] = [
     client: "[CLIENT NAME]",
     year: "2026",
     category: "Digital / Brand",
-    image: "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1800&q=85",
+    image: "/images/cherrydeck-rMILC1PIwM0-unsplash.jpg",
     description: "A visual identity translated into a tactile digital environment.",
     size: "wide"
   },
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     client: "[CLIENT NAME]",
     year: "2026",
     category: "Interactive / Motion",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/pexels-mikael-blomkvist-6476578.jpg",
     description: "A moving interface built around rhythm, material and interaction.",
     size: "portrait"
   },
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     client: "[CLIENT NAME]",
     year: "2025",
     category: "Creative Development",
-    image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1600&q=85",
+    image: "/images/pexels-silverkblack-23496709.jpg",
     description: "An editorial commerce experience with a deliberately quiet interface.",
     size: "square"
   }

@@ -36,7 +36,7 @@ export default function Hero() {
             transition={{ duration: 1.15, delay: 0.9, ease: [0.16, 1, 0.3, 1] }}
           >
             <img
-              src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?auto=format&fit=crop&w=1400&q=88"
+              src="/images/balazs-ketyi-9VzoRKfBsMM-unsplash.jpg"
               alt="Abstract studio material placeholder"
               className="h-full w-full object-cover object-[62%_center] grayscale-[20%]"
             />

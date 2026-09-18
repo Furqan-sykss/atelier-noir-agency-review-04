@@ -17,7 +17,7 @@ export function Reveal({
       className={className}
       initial={reduced ? false : { opacity: 0, y: 28 }}
       whileInView={reduced ? undefined : { opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.05 }}
       transition={{ duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] }}
     >
       {children}
@@ -44,7 +44,7 @@ export function ImageReveal({
         className="h-full w-full object-cover"
         initial={reduced ? false : { scale: 1.12, clipPath: "inset(8% 0 8% 0)" }}
         whileInView={reduced ? undefined : { scale: 1, clipPath: "inset(0 0 0 0)" }}
-        viewport={{ once: true, amount: 0.15 }}
+        viewport={{ once: true, amount: 0.05 }}
         transition={{ duration: 1.15, ease: [0.16, 1, 0.3, 1] }}
       />
     </div>
