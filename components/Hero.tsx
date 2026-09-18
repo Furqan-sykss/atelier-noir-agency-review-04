@@ -35,11 +35,7 @@ export default function Hero() {
             animate={reduced ? undefined : { clipPath: "inset(0 0 0 0)", scale: 1 }}
             transition={{ duration: 1.15, delay: 0.9, ease: [0.16, 1, 0.3, 1] }}
           >
-            <img
-              src="/images/balazs-ketyi-9VzoRKfBsMM-unsplash.jpg"
-              alt="Abstract studio material placeholder"
-              className="h-full w-full object-cover object-[62%_center] grayscale-[20%]"
-            />
+            <img src="/images/balazs-ketyi-9VzoRKfBsMM-unsplash.jpg" alt="Abstract studio material placeholder" className="h-full w-full object-cover object-[62%_center] grayscale-[20%]" />
             <figcaption className="absolute bottom-3 left-3 text-[8px] uppercase tracking-[.16em] text-white/70">Image 01 / visual study</figcaption>
           </motion.figure>
         </div>

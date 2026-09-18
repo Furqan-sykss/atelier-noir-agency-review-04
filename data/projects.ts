@@ -18,7 +18,7 @@ export const projects: Project[] = [
     category: "Digital / Brand",
     image: "/images/cherrydeck-rMILC1PIwM0-unsplash.jpg",
     description: "A visual identity translated into a tactile digital environment.",
-    size: "wide"
+    size: "wide",
   },
   {
     id: "02",
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     category: "Interactive / Motion",
     image: "/images/pexels-mikael-blomkvist-6476578.jpg",
     description: "A moving interface built around rhythm, material and interaction.",
-    size: "portrait"
+    size: "portrait",
   },
   {
     id: "03",
@@ -38,6 +38,6 @@ export const projects: Project[] = [
     category: "Creative Development",
     image: "/images/pexels-silverkblack-23496709.jpg",
     description: "An editorial commerce experience with a deliberately quiet interface.",
-    size: "square"
-  }
+    size: "square",
+  },
 ];

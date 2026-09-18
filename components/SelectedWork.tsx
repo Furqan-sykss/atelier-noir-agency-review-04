@@ -10,17 +10,18 @@ export default function SelectedWork() {
     <section id="work" className="bg-[#e7e4dc] py-24 md:py-32">
       <div className="container">
         <div className="grid grid-cols-12 gap-6 border-b border-black/15 pb-5">
-          <div className="col-span-7 md:col-span-3"><span className="eyebrow">03 — Selected work</span></div>
-          <p className="col-span-5 text-right text-[9px] uppercase tracking-[.16em] text-[#6e6b64] md:col-span-2 md:col-start-11">Archive<br />2025—26</p>
+          <div className="col-span-7 md:col-span-3">
+            <span className="eyebrow">03 — Selected work</span>
+          </div>
+          <p className="col-span-5 text-right text-[9px] uppercase tracking-[.16em] text-[#6e6b64] md:col-span-2 md:col-start-11">
+            Archive
+            <br />
+            2025—26
+          </p>
         </div>
 
         <div className="mt-16 md:mt-24">
-          <motion.article
-            initial={reduced ? false : { opacity: 0, y: 35 }}
-            whileInView={reduced ? undefined : { opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: .05 }}
-            transition={{ duration: .85, ease: [0.16,1,.3,1] }}
-          >
+          <motion.article initial={reduced ? false : { opacity: 0, y: 35 }} whileInView={reduced ? undefined : { opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.05 }} transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}>
             <div className="grid grid-cols-12 gap-4 items-end">
               <div className="col-span-12 md:col-span-10">
                 <div className="group relative aspect-[16/8] overflow-hidden">
@@ -32,7 +33,9 @@ export default function SelectedWork() {
                 <span className="eyebrow">{projects[0].client}</span>
                 <h3 className="mt-3 text-xl tracking-[-.03em]">{projects[0].title}</h3>
                 <p className="mt-2 text-xs leading-5 text-[#6e6b64]">{projects[0].description}</p>
-                <p className="mt-5 text-[9px] uppercase tracking-[.14em] text-[#6e6b64]">{projects[0].year} / {projects[0].category}</p>
+                <p className="mt-5 text-[9px] uppercase tracking-[.14em] text-[#6e6b64]">
+                  {projects[0].year} / {projects[0].category}
+                </p>
               </div>
             </div>
           </motion.article>
@@ -40,8 +43,8 @@ export default function SelectedWork() {
           <motion.article
             initial={reduced ? false : { opacity: 0, y: 45 }}
             whileInView={reduced ? undefined : { opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: .05 }}
-            transition={{ duration: .9, ease: [0.16,1,.3,1] }}
+            viewport={{ once: true, amount: 0.05 }}
+            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
             className="mt-28 md:mt-44"
           >
             <div className="grid grid-cols-12 gap-4">
@@ -55,7 +58,9 @@ export default function SelectedWork() {
                 <span className="eyebrow">{projects[1].category}</span>
                 <h3 className="serif mt-3 text-4xl leading-[.9] md:text-6xl">{projects[1].title}</h3>
                 <p className="mt-5 text-xs leading-6 text-[#6e6b64]">{projects[1].description}</p>
-                <span className="mt-7 text-[9px] uppercase tracking-[.14em] text-[#6e6b64]">{projects[1].client} / {projects[1].year}</span>
+                <span className="mt-7 text-[9px] uppercase tracking-[.14em] text-[#6e6b64]">
+                  {projects[1].client} / {projects[1].year}
+                </span>
               </div>
             </div>
           </motion.article>
@@ -63,8 +68,8 @@ export default function SelectedWork() {
           <motion.article
             initial={reduced ? false : { opacity: 0, y: 45 }}
             whileInView={reduced ? undefined : { opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: .05 }}
-            transition={{ duration: .9, ease: [0.16,1,.3,1] }}
+            viewport={{ once: true, amount: 0.05 }}
+            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
             className="mt-28 md:mt-40"
           >
             <div className="relative">
@@ -75,7 +80,9 @@ export default function SelectedWork() {
                 <span className="eyebrow">03 / {projects[2].category}</span>
                 <h3 className="mt-4 text-3xl leading-[.95] tracking-[-.04em] md:text-5xl">{projects[2].title}</h3>
                 <p className="mt-4 text-xs leading-6 text-[#6e6b64]">{projects[2].description}</p>
-                <p className="mt-6 text-[9px] uppercase tracking-[.14em] text-[#6e6b64]">{projects[2].client} / {projects[2].year}</p>
+                <p className="mt-6 text-[9px] uppercase tracking-[.14em] text-[#6e6b64]">
+                  {projects[2].client} / {projects[2].year}
+                </p>
               </div>
             </div>
           </motion.article>

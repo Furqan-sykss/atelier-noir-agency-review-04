@@ -2,15 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
-export function Reveal({
-  children,
-  className = "",
-  delay = 0,
-}: {
-  children: React.ReactNode;
-  className?: string;
-  delay?: number;
-}) {
+export function Reveal({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
   const reduced = useReducedMotion();
   return (
     <motion.div
@@ -25,15 +17,7 @@ export function Reveal({
   );
 }
 
-export function ImageReveal({
-  src,
-  alt,
-  className = "",
-}: {
-  src: string;
-  alt: string;
-  className?: string;
-}) {
+export function ImageReveal({ src, alt, className = "" }: { src: string; alt: string; className?: string }) {
   const reduced = useReducedMotion();
   return (
     <div className={`overflow-hidden ${className}`}>
